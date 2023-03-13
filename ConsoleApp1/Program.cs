@@ -18,3 +18,9 @@ var division = int1 / int2;
 var divisionDouble = (double) int1 / int2;
 Console.WriteLine(division);
 Console.WriteLine(divisionDouble);
+
+var dateUtc = DateTime.UtcNow;
+Console.WriteLine(dateUtc);
+
+var date = DateTime.Now;
+Console.WriteLine(date);
