@@ -14,8 +14,24 @@ namespace Homework3
 
         public void Shooting(Soldier enemy)
         {
-            enemy.Health--;
-            Console.WriteLine($"Health of soldier {enemy.Name} is {enemy.Health}");
+            var randomNumber = GenerateRandomNumber();
+            enemy.Health -= randomNumber;
+            
+            if (enemy.Health > 0)
+            {
+                Console.WriteLine($"Health of soldier {enemy.Name} is {enemy.Health}, got lucky, still alive");
+            }
+            else if (enemy.Health <= 0) 
+            {
+                Console.WriteLine($"Health of soldier {enemy.Name} is {enemy.Health}, headshot, dead");
+            }
+        }
+
+        //generate random number betwen 0 and 100
+        public static int GenerateRandomNumber()
+        {
+            Random random = new Random();
+            return random.Next(101);
         }
     }
 }
