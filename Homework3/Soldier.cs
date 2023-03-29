@@ -31,7 +31,7 @@ namespace Homework3
         public static int GenerateRandomNumber()
         {
             Random random = new Random();
-            return random.Next(101);
+            return random.Next(45);
         }
     }
 }
