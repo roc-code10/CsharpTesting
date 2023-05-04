@@ -12,26 +12,18 @@ namespace Homework3
         {
         }
 
-        public void Shooting(Soldier enemy)
+        public string Shooting(Soldier enemy, int damage)
         {
-            var randomNumber = GenerateRandomNumber();
-            enemy.Health -= randomNumber;
+            enemy.Health -= damage;
             
             if (enemy.Health > 0)
             {
-                Console.WriteLine($"Health of soldier {enemy.Name} is {enemy.Health}, got lucky, still alive");
+                return $"Health of soldier {enemy.Name} is {enemy.Health}, got lucky, still alive";
             }
-            else if (enemy.Health <= 0) 
+            else 
             {
-                Console.WriteLine($"Health of soldier {enemy.Name} is {enemy.Health}, headshot, dead");
+                return $"Health of soldier {enemy.Name} is {enemy.Health}, headshot, dead";
             }
-        }
-
-        //generate random number betwen 0 and 100
-        public static int GenerateRandomNumber()
-        {
-            Random random = new Random();
-            return random.Next(45);
         }
     }
 }
