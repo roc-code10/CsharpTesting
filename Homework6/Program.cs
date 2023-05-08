@@ -1,28 +1,20 @@
 ﻿using Homework6;
 
-Console.WriteLine("Welcome to Zoo");
+WriteLine("Welcome to Zoo (^.^)");
 
-var ticketWorker = new TicketWorker();
-ticketWorker.Name = "Brian";
+var ticketWorker = new TicketWorker("Brian");
 ticketWorker.SellTickets();
 
-var workerThatFeedsAnimals = new Worker();
-workerThatFeedsAnimals.Name = "Johnny";
+var workerThatFeedsAnimals = new Worker("Johnny");
 workerThatFeedsAnimals.Animals = new List<Animal>();
 
-var Giraffe = new Animal();
-Giraffe.Name = "Giraffe";
-Giraffe.Food = "leaves";
+var Giraffe = new Animal("Giraffe", "Leaves");
 Giraffe.IsFed = true;
 
-var Lion = new Animal();
-Lion.Name = "Lion";
-Lion.Food = "meat";
+var Lion = new Animal("Lion", "Meat");
 Lion.IsFed = false;
 
-var Panda = new Animal();
-Panda.Name = "Panda";
-Panda.Food = "bamboo";
+var Panda = new Animal("Panda", "Bamboo");
 Panda.IsFed = true;
 
 workerThatFeedsAnimals.Animals.Add(Giraffe);
@@ -31,8 +23,7 @@ workerThatFeedsAnimals.Animals.Add(Panda);
 
 foreach (var animal in workerThatFeedsAnimals.Animals)
 {
-    Console.WriteLine($"{workerThatFeedsAnimals.Name} takes care of {animal.Name} who's eating {animal.Food} and {animal.IsAnimalFed()}");
-
+    WriteLine($"{workerThatFeedsAnimals.Name} takes care of {animal.Name} who's eating {animal.Food} and {animal.IsAnimalFed()}");
 }
 
 

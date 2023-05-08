@@ -4,33 +4,33 @@ List<Participant> participants = new List<Participant>();
 
 while (true)
 {
-    Console.WriteLine("\nPlease choose from the following options:");
+    WriteLine("\nPlease choose from the following options:");
 
-    Console.WriteLine("\n1. Add a new participant with score to the end of the list.");
-    Console.WriteLine("2. Add a new participant with score to a given position in the list.");
-    Console.WriteLine("3. Delete a participant from a given position.");
-    Console.WriteLine("4. Modify the score of a participant by id.");
-    Console.WriteLine("5. Print all participants that have a score equal or less that a given score.");
-    Console.WriteLine("6. Print all the participants in ascending order by score.");
-    Console.WriteLine("7. Print all the participants with a score equal or greater than a given score in ascending order by score.");
-    Console.WriteLine("8. Calculate the arithmetic mean of the scores for a given interval.");
-    Console.WriteLine("0. Exit");
+    WriteLine("\n1. Add a new participant with score to the end of the list.");
+    WriteLine("2. Add a new participant with score to a given position in the list.");
+    WriteLine("3. Delete a participant from a given position.");
+    WriteLine("4. Modify the score of a participant by id.");
+    WriteLine("5. Print all participants that have a score equal or less that a given score.");
+    WriteLine("6. Print all the participants in ascending order by score.");
+    WriteLine("7. Print all the participants with a score equal or greater than a given score in ascending order by score.");
+    WriteLine("8. Calculate the arithmetic mean of the scores for a given interval.");
+    WriteLine("0. Exit");
 
-    Console.Write("\nEnter your choice: ");
+    Write("\nEnter your choice: ");
 
     int choice;
-    bool isValidChoice = int.TryParse(Console.ReadLine(), out choice);
+    bool isValidChoice = int.TryParse(ReadLine(), out choice);
 
     if (!isValidChoice)
     {
-        Console.WriteLine("\nYou entered an invalid choice! Please choose one option from the list.");
+        WriteLine("\nYou entered an invalid choice! Please choose one option from the list.");
     }
     else
 
         switch (choice)
     {
         case 0:
-            Console.WriteLine("\nBye bye!");
+                WriteLine("\nBye bye!");
             return;
         case 1:
             Participant.AddParticipantToEndOfList(participants);
@@ -57,7 +57,7 @@ while (true)
             Participant.CalculateArithmeticMean(participants);
             break;
         default:
-            Console.WriteLine($"\nInvalid choice: {choice}");
+                WriteLine($"\nInvalid choice: {choice}");
             break;
     }
 }
