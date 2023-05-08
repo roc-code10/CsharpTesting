@@ -1,36 +1,38 @@
-﻿Console.WriteLine("Homework - Problem 1");
-Console.Write("Please, introduce a number: ");
+﻿WriteLine("Basic C# part 2 - Homework: Problem 1");
+WriteLine("1. Write a program that reads a number from the keyboard." +
+    " Check whether that number is divisible by 7 and 11 or not.");
+Write("Please, introduce a number: ");
 
 try
 {
-    string input = Console.ReadLine();
+    string input = ReadLine();
 
     if (int.TryParse(input, out int number))
     {
-        Console.WriteLine("The input was successfully converted to an integer.");
-        Console.WriteLine("You have introduced the following number: " + number);
+        WriteLine("The input was successfully converted to an integer.");
+        WriteLine("You have introduced the following number: " + number);
 
         if (number % 7 == 0 && number % 11 == 0)
         {
-            Console.WriteLine("Number is divisible by 7 and 11");
+            WriteLine("Number is divisible by 7 and 11");
         }
         else
         {
-            Console.WriteLine("Number is not divisible by 7 and 11");
+            WriteLine("Number is not divisible by 7 and 11");
         }
     }
     else
     {
-        Console.WriteLine("You have introduced the following text: " + input);
-        Console.WriteLine("The input could not be converted to an integer.");
+        WriteLine("You have introduced the following text: " + input);
+        WriteLine("The input could not be converted to an integer.");
     }
    
 }
 catch (FormatException)
 {
-    Console.WriteLine("Invalid input format. Please enter a valid integer.");
+    WriteLine("Invalid input format. Please enter a valid integer.");
 }
 catch (OverflowException)
 {
-    Console.WriteLine("The input number is too large or too small to be represented as an integer.");
+    WriteLine("The input number is too large or too small to be represented as an integer.");
 }

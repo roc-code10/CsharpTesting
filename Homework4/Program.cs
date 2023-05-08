@@ -1,4 +1,7 @@
-﻿int count = 0;
+﻿Console.WriteLine("By listing the first six prime numbers: 2, 3, 5, 7, 11, and 13, " +
+    "we can see that the 6th prime is 13. What is the 47th prime number?");
+
+int count = 0;
 int num = 2;
 int primeNumber = 0;
 

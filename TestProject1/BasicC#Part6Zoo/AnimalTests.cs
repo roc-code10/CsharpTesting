@@ -26,5 +26,18 @@ namespace Tests.Homework6
             Giraffe.IsFed = false;
             Giraffe.IsAnimalFed().Should().Be("Giraffe is hungry, it needs to eat some leaves");
         }
+
+        [Theory]
+        [InlineData(null, null, "Value cannot be null. (Parameter 'name')")]
+        [InlineData("", "", "Value cannot be null. (Parameter 'name')")]
+        [InlineData(" ", " ", "Value cannot be null. (Parameter 'name')")]
+        [InlineData("Giraffe", null, "Value cannot be null. (Parameter 'food')")]
+        [InlineData("Giraffe", "", "Value cannot be null. (Parameter 'food')")]
+        [InlineData("Giraffe", " ", "Value cannot be null. (Parameter 'food')")]
+        public void ValidateThatExceptionIsThrown(string name, string food, string expectedMessage)
+        {
+            var ex = Assert.Throws<ArgumentNullException>(() => new Animal(name, food));
+            Assert.Equal(expectedMessage, ex.Message);
+        }
     }
 }

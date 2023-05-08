@@ -1,4 +1,13 @@
-﻿using Homework6;
+﻿
+//Create a system for managing a zoo. You will have the next entities:
+//different animals, each one with a name, what they eat and a field that shows if they were fed
+//workers that feed the animals
+//1 worker that sells tickets for the zoo
+//Assign a worker to list of animals that it need to take care for
+//Feed the animals.
+//Keep track of the number of tickets sold
+
+using Homework6;
 
 WriteLine("Welcome to Zoo (^.^)");
 
