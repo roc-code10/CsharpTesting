@@ -14,13 +14,10 @@ namespace Tests.Homework6
         [Fact]
         public void ValidateThatListOfAnimalsHasOneElement()
         {
-            var workerThatFeedsAnimals = new Worker();
-            workerThatFeedsAnimals.Name = "Johnny";
+            var workerThatFeedsAnimals = new Worker("Johnny");
             workerThatFeedsAnimals.Animals = new List<Animal>();
 
-            var Giraffe = new Animal();
-            Giraffe.Name = "Giraffe";
-            Giraffe.Food = "leaves";
+            var Giraffe = new Animal("Giraffe", "leaves");
             Giraffe.IsFed = true;
 
             workerThatFeedsAnimals.Animals.Add(Giraffe);

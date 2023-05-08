@@ -2,15 +2,19 @@
 {
     public class TicketWorker : Worker
     {
-       int TicketsSold { get; set; }
-       public void SellTickets() 
+        public TicketWorker(string name) : base(name)
+        {
+        }
+
+        int TicketsSold { get; set; }
+        public void SellTickets() 
         { 
             TicketsSold = 0;
 
             while (true)
             {
-                Console.WriteLine("Do you want a ticket? (y/n)");
-                string response = Console.ReadLine().ToLower();
+                WriteLine("Do you want a ticket? (y/n)");
+                string response = ReadLine().ToLower();
 
                 if (response == "y")
                 {
@@ -18,8 +22,8 @@
                 }
                 else if (response == "n" && TicketsSold == 0)
                 {
-                    Console.WriteLine("You haven't purchased any tickets, can't visit Zoo");
-                    Console.WriteLine("--------------------------------------------------");
+                    WriteLine("You haven't purchased any tickets, can't visit Zoo");
+                    WriteLine("--------------------------------------------------");
                     break;
                 }
                 else if (response == "n")
@@ -28,13 +32,13 @@
                 }
                 else
                 {
-                    Console.WriteLine("Invalid response, please enter 'y' or 'n'");
+                    WriteLine("Invalid response, please enter 'y' or 'n'");
                 }
             }
             if (TicketsSold > 0)
             {
-                Console.WriteLine($"Here are your {TicketsSold} ticket/s sold by {Name}. Welcome to Zoo!");
-                Console.WriteLine("------------------------------------------------------");
+                WriteLine($"Here are your {TicketsSold} ticket/s sold by {Name}. Welcome to Zoo!");
+                WriteLine("------------------------------------------------------");
             }
         }
     }
