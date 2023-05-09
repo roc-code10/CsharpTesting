@@ -20,6 +20,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Homework3\BasicC#Part3PlayWithObjects.csproj" />
+    <ProjectReference Include="..\Homework5\BasicC#Part2Homework4.csproj" />
     <ProjectReference Include="..\Homework6\BasicC#Part6Zoo.csproj" />
   </ItemGroup>
 

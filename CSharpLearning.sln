@@ -13,7 +13,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BasicC#Part3PlayWithObjects
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BasicC#Part2Homework3", "Homework4\BasicC#Part2Homework3.csproj", "{7D2BE7AD-B9BD-406B-B3C3-B538530CD4FD}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Homework5", "Homework5\Homework5.csproj", "{9083781A-0D6C-40F8-AA2B-4887C8A99D86}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BasicC#Part2Homework4", "Homework5\BasicC#Part2Homework4.csproj", "{9083781A-0D6C-40F8-AA2B-4887C8A99D86}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tests", "TestProject1\Tests.csproj", "{2A5C0A93-07C5-45A1-9DB3-9B67EDA8E9C7}"
 EndProject
