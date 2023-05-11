@@ -23,6 +23,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BasicCSharpPart4Contest", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicCSharpPart2Homework5", "BasicCSharpPart2Homework5\BasicCSharpPart2Homework5.csproj", "{95A81BF7-AD30-407B-90E1-0FA5096C786A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicCSharpPart2Challenge1", "BasicCSharpPart2Challenge1\BasicCSharpPart2Challenge1.csproj", "{59B9917D-FEB7-4A10-BD7D-6D9B1515912B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,10 @@ Global
 		{95A81BF7-AD30-407B-90E1-0FA5096C786A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{95A81BF7-AD30-407B-90E1-0FA5096C786A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{95A81BF7-AD30-407B-90E1-0FA5096C786A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59B9917D-FEB7-4A10-BD7D-6D9B1515912B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59B9917D-FEB7-4A10-BD7D-6D9B1515912B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59B9917D-FEB7-4A10-BD7D-6D9B1515912B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59B9917D-FEB7-4A10-BD7D-6D9B1515912B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
