@@ -3,23 +3,27 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33424.131
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{C440F4DE-CD50-4FCB-B351-17CE29207520}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharpLearning", "ConsoleApp1\CSharpLearning.csproj", "{C440F4DE-CD50-4FCB-B351-17CE29207520}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Homework1", "Homework1\Homework1.csproj", "{14A8E038-2CE5-4559-B609-BB812F3D6C1B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BasicCSharpPart2Homework1", "Homework1\BasicCSharpPart2Homework1.csproj", "{14A8E038-2CE5-4559-B609-BB812F3D6C1B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Homework2", "Homework2\Homework2.csproj", "{9A55D513-8C76-4B0B-ABEE-BA11FFC2F3AC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BasicCSharpPart2Homework2", "Homework2\BasicCSharpPart2Homework2.csproj", "{9A55D513-8C76-4B0B-ABEE-BA11FFC2F3AC}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Homework3", "Homework3\Homework3.csproj", "{17D92DF6-A12A-4DA2-BD05-72B48CE36294}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BasicCSharpPart3PlayWithObjects", "Homework3\BasicCSharpPart3PlayWithObjects.csproj", "{17D92DF6-A12A-4DA2-BD05-72B48CE36294}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Homework4", "Homework4\Homework4.csproj", "{7D2BE7AD-B9BD-406B-B3C3-B538530CD4FD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BasicCSharpPart2Homework3", "Homework4\BasicCSharpPart2Homework3.csproj", "{7D2BE7AD-B9BD-406B-B3C3-B538530CD4FD}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Homework5", "Homework5\Homework5.csproj", "{9083781A-0D6C-40F8-AA2B-4887C8A99D86}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BasicCSharpPart2Homework4", "Homework5\BasicCSharpPart2Homework4.csproj", "{9083781A-0D6C-40F8-AA2B-4887C8A99D86}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tests", "TestProject1\Tests.csproj", "{2A5C0A93-07C5-45A1-9DB3-9B67EDA8E9C7}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Homework6", "Homework6\Homework6.csproj", "{ECE9FB39-2735-410A-8BEF-60C334ABC038}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BasicCSharpPart6Zoo", "Homework6\BasicCSharpPart6Zoo.csproj", "{ECE9FB39-2735-410A-8BEF-60C334ABC038}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Part4ContestHomework", "Part4Homework\Part4ContestHomework.csproj", "{DCADE619-AD1C-43FF-8335-A8DD52C76072}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BasicCSharpPart4Contest", "Part4Homework\BasicCSharpPart4Contest.csproj", "{DCADE619-AD1C-43FF-8335-A8DD52C76072}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicCSharpPart2Homework5", "BasicCSharpPart2Homework5\BasicCSharpPart2Homework5.csproj", "{95A81BF7-AD30-407B-90E1-0FA5096C786A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicCSharpPart2Challenge1", "BasicCSharpPart2Challenge1\BasicCSharpPart2Challenge1.csproj", "{59B9917D-FEB7-4A10-BD7D-6D9B1515912B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +67,14 @@ Global
 		{DCADE619-AD1C-43FF-8335-A8DD52C76072}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DCADE619-AD1C-43FF-8335-A8DD52C76072}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DCADE619-AD1C-43FF-8335-A8DD52C76072}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95A81BF7-AD30-407B-90E1-0FA5096C786A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95A81BF7-AD30-407B-90E1-0FA5096C786A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95A81BF7-AD30-407B-90E1-0FA5096C786A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95A81BF7-AD30-407B-90E1-0FA5096C786A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59B9917D-FEB7-4A10-BD7D-6D9B1515912B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59B9917D-FEB7-4A10-BD7D-6D9B1515912B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59B9917D-FEB7-4A10-BD7D-6D9B1515912B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59B9917D-FEB7-4A10-BD7D-6D9B1515912B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

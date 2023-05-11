@@ -31,7 +31,6 @@ public class Participant
         Score = score;
     }
 
-
     public static void AddParticipantToEndOfList(List<Participant> participants)
     {
         Write("\nEnter participant name: ");
@@ -54,7 +53,6 @@ public class Participant
 
         WriteLine("\nParticipant was successfully added!");
     }
-
 
     public static void AddParticipantToGivenPosition(List<Participant> participants)
     {
@@ -109,7 +107,6 @@ public class Participant
             $"{deletedParticipant.Score}) deleted successfully!");
     }
 
-
     public static void ModifyParticipantScore(List<Participant> participants)
     {
         WriteLine($"\nCurrently the list has {participants.Count} participants");
@@ -153,7 +150,6 @@ public class Participant
 
         WriteLine("\nScore was successfully modified!");
     }
-
 
     public static void PrintParticipantsWithEqualOrLessScore(List<Participant> participants)
     {
@@ -236,7 +232,6 @@ public class Participant
         }
     }
 
-
     public static void CalculateArithmeticMean(List<Participant> participants)
     {
         WriteLine($"\nCurrently the list has {participants.Count} participants");
@@ -266,7 +261,6 @@ public class Participant
             WriteLine("\nYou have entered a start position greater than an end position");
             return;
         }
-
 
         int sum = 0;
         for (int i = startPosition - 1; i < endPosition; i++)

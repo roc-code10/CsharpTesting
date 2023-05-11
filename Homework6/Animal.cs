@@ -7,7 +7,7 @@
             if(string.IsNullOrWhiteSpace(name))
                 throw new ArgumentNullException(nameof(name));
 
-            if (string.IsNullOrWhiteSpace(food))
+            if(string.IsNullOrWhiteSpace(food))
                 throw new ArgumentNullException(nameof(food));
 
             Name = name;

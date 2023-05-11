@@ -19,8 +19,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Homework3\Homework3.csproj" />
-    <ProjectReference Include="..\Homework6\Homework6.csproj" />
+    <ProjectReference Include="..\Homework3\BasicCSharpPart3PlayWithObjects.csproj" />
+    <ProjectReference Include="..\Homework5\BasicCSharpPart2Homework4.csproj" />
+    <ProjectReference Include="..\Homework6\BasicCSharpPart6Zoo.csproj" />
   </ItemGroup>
 
 </Project>

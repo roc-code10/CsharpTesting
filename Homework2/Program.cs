@@ -1,37 +1,38 @@
-﻿Console.WriteLine("Homework 2: leap year");
-Console.WriteLine("----------------------");
-Console.Write("Please, give me a year to check if it is a leap year or not: ");
+﻿WriteLine("Homework 2: leap year");
+WriteLine("Check whether a given year is leap year or not.");
+WriteLine("----------------------");
+Write("Please, give me a year to check if it is a leap year or not: ");
 
 try
 {
-    string input = Console.ReadLine();
+    string input = ReadLine();
 
     if (int.TryParse(input, out int year))
     {
-        Console.WriteLine("You have introduced the following year: " + year);
+        WriteLine("You have introduced the following year: " + year);
         if (IsLeapYear(year))
         {
-            Console.WriteLine(year + " is leap year");
+            WriteLine(year + " is leap year");
         }
         else
         {
-            Console.WriteLine(year + " is not a leap year");
+            WriteLine(year + " is not a leap year");
         }
     }
     else
     {
-        Console.WriteLine("You have introduced the following text: " + input);
-        Console.WriteLine("The input could not be converted to a year.");
+        WriteLine("You have introduced the following text: " + input);
+        WriteLine("The input could not be converted to a year.");
     }
 
 }
 catch (FormatException)
 {
-    Console.WriteLine("Invalid input format. Please enter a valid integer.");
+    WriteLine("Invalid input format. Please enter a valid integer.");
 }
 catch (OverflowException)
 {
-    Console.WriteLine("The input number is too large or too small to be represented as an integer.");
+    WriteLine("The input number is too large or too small to be represented as an integer.");
 }
 
 static bool IsLeapYear(int year)
